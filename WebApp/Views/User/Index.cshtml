@@ -1,0 +1,32 @@
+﻿@model WebApp.Models.Entities.User
+
+@{
+    ViewData["Title"] = "Product List";
+}
+
+<h3>@ViewData["Title"]</h3>
+
+<hr />
+<div>
+    <button class="btn btn-primary mb-2" id="btnAdd">Thêm nhân viên</button>
+</div>
+
+<div class="container">
+    <table class="table table-sucess table-striped table-responsive table-hover">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Password</th>
+                <th>Telephone</th>
+            </tr>      
+        </thead>
+        <tbody id="tblBody"></tbody>
+    </table>
+
+</div>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+
+<script src="~/js/UserJs.js"></script>
