@@ -3,11 +3,11 @@ using System.ComponentModel.DataAnnotations;
 
 namespace WebApp.Models.Entities
 {
-    public class User
+    public partial class User
     {
 
         [DisplayName("Mã nhân viên")]
-        public string UserID { get; set; }
+        public string? UserID { get; set; }
 
         [Required]
         [DisplayName("Tên Nhân viên")]
